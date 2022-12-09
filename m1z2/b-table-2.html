@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        padding: 5px;
+      }
+      table {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <!-- colspan -->
+      <!-- rowspan -->
+      <thead>
+        <tr>
+          <th rowspan="2">Cloud Service</th>
+          <th colspan="3">Statistics</th>
+          <!-- does not work with thead -->
+          <!-- <th rowspan="4">Jestem po boku</th> -->
+        </tr>
+        <tr>
+          <!-- <th>Cloud Service</th> -->
+          <th>Users</th>
+          <th>Visits</th>
+          <th>Volume</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Google</td>
+          <td>12000</td>
+          <td>307000</td>
+          <td>1000 Tb</td>
+        </tr>
+        <tr>
+          <td>Amazon</td>
+          <td>9000</td>
+          <td>200500</td>
+          <td>800 Tb</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">test</td>
+        </tr>
+      </tfoot>
+    </table>
+    <!-- <table>
+      <tr>
+        <td>test</td>
+      </tr>
+    </table> -->
+  </body>
+</html>

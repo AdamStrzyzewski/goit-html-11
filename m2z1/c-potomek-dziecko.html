@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <style>
+      /* selektor potomka " " */
+      ul a {
+        color: red;
+      }
+      /* selektor dziecka ">" */
+      .menu > li {
+        border: 1px solid black;
+      }
+
+      /* ul ul > li {
+        border: 1px solid green;
+      }
+      .submenu > li {
+        border: 1px solid green;
+      } */
+    </style>
+  </head>
+  <body>
+    <ul>
+      <!-- li - potomek i dziecko ul -->
+      <li>
+        <!-- a - potomek ul -->
+        <!-- a - dziecko li -->
+        <a href="">Twitter</a>
+      </li>
+      <!-- li - potomek i dziecko ul -->
+      <li>
+        <a href="">Facebook</a>
+      </li>
+      <!-- li - potomek i dziecko ul -->
+      <li>
+        <a href="">Instagram</a>
+      </li>
+    </ul>
+
+    <ul class="menu">
+      <li>
+        Komputery i akcesoria
+        <ul class="submenu">
+          <li>Procesory</li>
+          <li>Monitory</li>
+          <li>Karty graficzne</li>
+        </ul>
+      </li>
+      <li>
+        Artykuły gospodarstwa domowego
+        <ul class="submenu">
+          <li>Lodówki</li>
+          <li>Telewizory</li>
+          <li>Pralki</li>
+        </ul>
+      </li>
+    </ul>
+
+    <p>
+      <a href="">Linkedin</a>
+    </p>
+  </body>
+</html>

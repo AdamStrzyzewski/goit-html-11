@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <style>
+      p:hover {
+        color: red;
+      }
+      p,
+      a,
+      span {
+        color: blue;
+      }
+
+      .link:focus,
+      .link:hover {
+        color: green;
+        text-decoration: none;
+      }
+
+      .link:visited {
+        color: red;
+      }
+
+      .link:active {
+        border: 10px solid black;
+      }
+      button:active {
+        border: 10px solid black;
+      }
+      p:active {
+        border: 10px solid green;
+      }
+      button:hover {
+        transform: scale(2);
+      }
+
+      button {
+        /* cursor: pointer; */
+        cursor: not-allowed;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hello World</p>
+    <ul>
+      <!-- <li><a class="link" href="">Twitter</a></li> -->
+      <!-- <li><a class="link" href="">Facebook</a></li> -->
+      <li><a class="link" href="https://google.com">Google</a></li>
+      <li><a class="link" href="https://linkedin.com">Linkedin</a></li>
+      <li><a class="link" href="https://igjsiojgs.com">random site</a></li>
+    </ul>
+    <button>click me</button>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <style>
+      main {
+        --primary-color: #04bf00;
+        --secondary-color: #cb4a4aa5;
+      }
+      .section h2 {
+        color: var(--primary-color, red);
+      }
+
+      p {
+        --secondary-color: blue;
+        color: var(--secondary-color);
+      }
+
+      span {
+        color: var(--secondary-color);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="section">
+        <h2 class="section-title">Nagłówek sekcji</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores
+          consequuntur quasi veritatis eaque eos optio ea doloribus obcaecati ut
+          sint!
+        </p>
+        <span>Ja jestem spanem</span>
+      </section>
+      <section class="section">
+        <h2 class="section-title">Nagłówek sekcji</h2>
+      </section>
+      <section class="section">
+        <h2 class="section-title">Nagłówek sekcji</h2>
+      </section>
+      <section class="section">
+        <h2>Nagłówek sekcji</h2>
+      </section>
+    </main>
+    <section class="section">
+      <h2>Nagłówek sekcji poza main</h2>
+    </section>
+  </body>
+</html>

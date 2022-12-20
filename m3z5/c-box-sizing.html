@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <style>
+      /* this is done by normalizer */
+      /* * {
+        box-sizing: border-box;
+      } */
+      body {
+        margin: 0;
+      }
+      .box {
+        background-color: yellow;
+        border: 2px dashed black;
+        padding: 15px;
+        margin: 20px;
+        width: 50px;
+        height: 100px;
+      }
+
+      .content-box {
+        box-sizing: content-box;
+      }
+
+      .border-box {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box content-box">Hello world</div>
+    <div class="box border-box">Hello world</div>
+  </body>
+</html>

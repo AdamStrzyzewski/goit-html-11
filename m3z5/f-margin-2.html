@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+      }
+      .outer-box {
+        width: 200px;
+        height: 200px;
+        background-color: teal;
+        margin-bottom: 20px;
+        margin-top: 300px;
+        /* padding-top: 20px; */
+      }
+      .inner-box {
+        height: 100px;
+        width: 100px;
+        background-color: pink;
+        /* wypadający margines zamiast tego padding */
+        margin-top: 200px;
+        margin-left: 20px;
+      }
+
+      .outer-box-2 {
+        /* załamanie marginesów zamiast tego tylko margin bottom */
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer-box">
+      <!-- content -->
+      <div class="inner-box"></div>
+    </div>
+    <div class="outer-box outer-box-2"></div>
+  </body>
+</html>

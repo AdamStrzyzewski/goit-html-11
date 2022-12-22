@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .menu {
+        width: 90%;
+        margin: 10px auto;
+        border: 5px solid green;
+        padding: 10px;
+        list-style: none;
+        background-color: #2196f3;
+        display: flex;
+
+        /* oś główna jest od lewej do prawej i poziomo */
+        /* flex-direction: row; */
+        /* oś główna jest od prawej do lewej i poziomo */
+        /* flex-direction: row-reverse; */
+        /* oś główna jest od góry do dołu i pionowo */
+        /* flex-direction: column; */
+        /* oś główna jest od dołu do góry i pionowo */
+        /* flex-direction: column-reverse; */
+
+        /* oś główna */
+        /* justify-content: flex-start; */
+        /* justify-content: flex-end; */
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* justify-content: space-evenly; */
+
+        /* oś poprzeczna */
+        /* align-items: stretch; */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        /* align-items: center; */
+        /* align-items: baseline; */
+
+        height: 300px;
+      }
+
+      .menu > .item:not(:last-child) {
+        /* margin-right: 10px; */
+      }
+
+      .menu .item {
+        border: 2px solid black;
+      }
+
+      .menu .link {
+        text-decoration: none;
+        display: block;
+      }
+
+      .p50 {
+        padding-top: 50px;
+      }
+
+      .p20 {
+        padding-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="menu">
+      <li class="item">
+        <a class="link p50" href="">Home page<br />second line</a>
+      </li>
+      <li class="item"><a class="link" href="">Blog</a></li>
+      <li class="item"><a class="link p20" href="">Podcasts</a></li>
+      <li class="item"><a class="link" href="">Contacts</a></li>
+      <li class="item"><a class="link p20" href="">Contacts 2</a></li>
+    </ul>
+  </body>
+</html>

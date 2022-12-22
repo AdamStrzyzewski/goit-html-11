@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <style>
+      /* https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink */
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        max-width: 500px;
+        padding: 0 10px;
+        margin: 0 auto;
+        border: 1px solid black;
+      }
+
+      .sidebar {
+        flex-basis: 200px;
+        background-color: red;
+      }
+
+      .sidebar-2 {
+        flex-basis: 200px;
+        background-color: blue;
+        flex-shrink: 1;
+      }
+
+      .content {
+        flex-basis: 200px;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">Sidebar</aside>
+      <main class="content">Main Content</main>
+      <aside class="sidebar-2">Sidebar</aside>
+    </div>
+  </body>
+</html>

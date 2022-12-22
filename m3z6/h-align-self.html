@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .menu {
+        width: 90%;
+        margin: 10px auto;
+        border: 5px solid green;
+        padding: 10px;
+        list-style: none;
+        background-color: #2196f3;
+        display: flex;
+
+        /* oś poprzeczna */
+        /* align-items: stretch; */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        /* align-items: center; */
+        /* align-items: baseline; */
+
+        height: 300px;
+      }
+      .item {
+        border: 3px solid black;
+      }
+
+      .flex-end {
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="menu">
+      <li class="item">
+        <a class="link" href="">Home page</a>
+      </li>
+      <li class="item flex-end"><a class="link" href="">Blog</a></li>
+      <li class="item"><a class="link" href="">Podcasts</a></li>
+      <li class="item"><a class="link" href="">Contacts</a></li>
+      <li class="item"><a class="link" href="">Contacts 2</a></li>
+    </ul>
+  </body>
+</html>

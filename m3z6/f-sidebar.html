@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-size: 32px;
+        color: white;
+      }
+
+      .container {
+        display: flex;
+        width: 1000px;
+        height: 100%;
+        /* margin: auto; */
+        /* border: 1px solid black; */
+      }
+
+      .sidebar {
+        /* flex-basis: 200px; */
+        display: flex;
+        background-color: blue;
+      }
+
+      .sidebar-2 {
+        background-color: teal;
+        flex-grow: 1;
+        /* 2+1 = 3
+        1/3
+        */
+      }
+
+      .content {
+        flex-grow: 1;
+        /* 2 + 1 = 3
+        2/3
+        */
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar"><p>Sidebar</p></div>
+      <div class="content"><p>Main content</p></div>
+      <div class="sidebar-2"><p>Sidebar 2</p></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        padding: 0;
+        margin: 10px auto;
+      }
+      .card-set {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        /* gap: 30px; */
+        /* column-gap: 30px */
+        /* row-gap: 30px */
+        column-gap: 5px;
+        row-gap: 20px;
+        height: 100%;
+      }
+
+      .card {
+        background-color: teal;
+        padding: 30px;
+        /* calc( (100% - numberOfGapsInARow * valueOfOneColumnGap) / numberOfElementsInARow ) */
+        flex-basis: calc((100% - 2 * 5px) / 3);
+        /* flex-basis: calc((100% - 3 * 10px) / 4); */
+        /* flex-basis: calc((100% - 4 * 10px) / 5); */
+      }
+
+      .card h2 {
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <ul class="card-set">
+        <li class="card">
+          <h2>Lorem ipsum dolor sit</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit iure
+            iusto et earum tenetur temporibus excepturi facere dolore
+            exercitationem quis?
+          </p>
+        </li>
+        <li class="card">
+          <h2>Lorem ipsum dolor sit</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit iure
+            iusto et earum tenetur temporibus excepturi facere dolore
+            exercitationem quis?
+          </p>
+        </li>
+        <li class="card">
+          <h2>Lorem ipsum dolor sit</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit iure
+            iusto et earum tenetur temporibus excepturi facere dolore
+            exercitationem quis?
+          </p>
+        </li>
+        <li class="card">
+          <h2>Lorem ipsum dolor sit</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit iure
+            iusto et earum tenetur temporibus excepturi facere dolore
+            exercitationem quis?
+          </p>
+        </li>
+        <li class="card">
+          <h2>Lorem ipsum dolor sit</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit iure
+            iusto et earum tenetur temporibus excepturi facere dolore
+            exercitationem quis?
+          </p>
+        </li>
+        <li class="card">
+          <h2>Lorem ipsum dolor sit</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit iure
+            iusto et earum tenetur temporibus excepturi facere dolore
+            exercitationem quis?
+          </p>
+        </li>
+        <li class="card">
+          <h2>Lorem ipsum dolor sit</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit iure
+            iusto et earum tenetur temporibus excepturi facere dolore
+            exercitationem quis?
+          </p>
+        </li>
+        <li class="card">
+          <h2>Lorem ipsum dolor sit</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit iure
+            iusto et earum tenetur temporibus excepturi facere dolore
+            exercitationem quis?
+          </p>
+        </li>
+        <li class="card">
+          <h2>Lorem ipsum dolor sit</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit iure
+            iusto et earum tenetur temporibus excepturi facere dolore
+            exercitationem quis?
+          </p>
+        </li>
+        <li class="card">
+          <h2>Lorem ipsum dolor sit</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit iure
+            iusto et earum tenetur temporibus excepturi facere dolore
+            exercitationem quis?
+          </p>
+        </li>
+        <li class="card">
+          <h2>Lorem ipsum dolor sit</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit iure
+            iusto et earum tenetur temporibus excepturi facere dolore
+            exercitationem quis?
+          </p>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

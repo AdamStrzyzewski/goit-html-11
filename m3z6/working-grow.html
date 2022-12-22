@@ -1,0 +1,45 @@
+<!-- https://css-tricks.com/flex-grow-is-weird/ -->
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-size: 32px;
+        color: white;
+      }
+
+      .container {
+        display: flex;
+        max-width: 1000px;
+        height: 100%;
+      }
+
+      .sidebar {
+        display: flex;
+        background-color: blue;
+        flex-basis: 400px;
+      }
+
+      .sidebar-2 {
+        background-color: teal;
+        flex-grow: 1;
+        flex-basis: 300px;
+      }
+
+      .content {
+        flex-grow: 2;
+        flex-basis: 300px;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar"><p>Sidebar</p></div>
+      <div class="content"><p>Main content</p></div>
+      <div class="sidebar-2"><p>Sidebar 2</p></div>
+    </div>
+  </body>
+</html>

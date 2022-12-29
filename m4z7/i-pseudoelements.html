@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        color: #212121;
+        letter-spacing: -0.05em;
+        line-height: 1.5;
+      }
+
+      .list {
+        list-style: none;
+      }
+
+      .list-link {
+        display: inline-flex;
+        align-items: center;
+        color: red;
+        text-decoration: none;
+        font-size: 32px;
+      }
+
+      .list-link::before,
+      .list-link::after {
+        display: block;
+        content: "";
+        width: 24px;
+        height: 24px;
+        background-size: contain;
+      }
+
+      .list-link::before {
+        margin-right: 16px;
+        background-image: url("https://cdn-icons-png.flaticon.com/512/599/599502.png");
+        transition: 0.5s;
+      }
+
+      .list-link:hover::before {
+        transform: scale(2) rotate(90deg);
+      }
+
+      .list-link::after {
+        display: none;
+        margin-left: 16px;
+        background-image: url("https://cdn-icons-png.flaticon.com/512/507/507257.png");
+      }
+
+      .list-link:hover::after {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="list">
+      <li class="list-item">
+        <!-- ::before -->
+        <a href="" class="list-link">Home</a>
+        <!-- ::after -->
+      </li>
+      <li class="list-item">
+        <a href="" class="list-link">Portfolio</a>
+      </li>
+      <li class="list-item">
+        <a href="" class="list-link">Team</a>
+      </li>
+      <li class="list-item">
+        <a href="" class="list-link">About</a>
+      </li>
+    </ul>
+  </body>
+</html>

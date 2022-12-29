@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        color: #212121;
+        letter-spacing: -0.05em;
+        line-height: 1.5;
+      }
+
+      .tile-set {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        gap: 10px;
+        padding: 10px;
+      }
+      .tile {
+        height: 200px;
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        background-color: white;
+        /* border: 1px solid black; */
+        font-size: 32px;
+      }
+
+      .tile:nth-child(1) {
+        /* x-axis y-axis blur spread color  */
+        /* outset|inset x-axis y-axis blur spread color  */
+        box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.5);
+      }
+
+      .tile:nth-child(2) {
+        box-shadow: 10px 10px 8px -5px rgba(0, 0, 0, 0.5);
+      }
+
+      .tile:nth-child(3) {
+        box-shadow: -10px -10px 8px -5px rgba(0, 0, 0, 0.5);
+      }
+      .tile:nth-child(4) {
+        box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.5);
+      }
+      .tile:nth-child(5) {
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      .tile:nth-child(6) {
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+      }
+      .tile:hover:nth-child(6) {
+        box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+      }
+      .tile:nth-child(7) {
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5), 20px 20px 10px 5px red,
+          -20px -20px 10px 5px blue, inset -20px -20px 10px 5px blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tile-set">
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+    </div>
+  </body>
+</html>

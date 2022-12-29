@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+        line-height: 1.5;
+        color: #212121;
+      }
+
+      .tile {
+        margin-left: 40px;
+        margin-top: 40px;
+        height: 120px;
+        border: 1px solid #2a2a2a;
+        background-size: 20px;
+        background-image: url("https://cdn0.iconfinder.com/data/icons/essentials-volume-6/128/apple-512.png");
+      }
+
+      .no-repeat {
+        background-repeat: no-repeat;
+      }
+
+      .repeat-x {
+        background-repeat: repeat-x;
+      }
+
+      .repeat-y {
+        background-repeat: repeat-y;
+      }
+
+      .repeat {
+        /* default */
+        background-repeat: repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tile-set">
+      <div class="tile no-repeat"></div>
+      <div class="tile repeat-x"></div>
+      <div class="tile repeat-y"></div>
+      <div class="tile repeat"></div>
+    </div>
+  </body>
+</html>

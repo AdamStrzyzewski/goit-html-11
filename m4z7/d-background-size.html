@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+        line-height: 1.5;
+        color: #212121;
+      }
+
+      .flex {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .wrapper {
+        font-size: 50px;
+        color: white;
+        width: 50%;
+        height: 400px;
+        border: 2px dashed black;
+        margin-bottom: 20px;
+        background: red url("https://image.ibb.co/mjdbZ5/bg5.jpg") no-repeat
+          center;
+        /* background: background-color background-image background-repeat background-position background-attachement; */
+      }
+
+      .example {
+        /* width 200px height auto */
+        background-size: 200px;
+        background-size: 200px 300px;
+      }
+
+      .auto {
+        background-size: auto;
+      }
+
+      .cover {
+        background-size: cover;
+      }
+
+      .contain {
+        background-size: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex">
+      <div class="wrapper example">
+        <p class="label">Example</p>
+      </div>
+      <div class="wrapper auto">
+        <p class="label">Auto</p>
+      </div>
+      <div class="wrapper cover">
+        <p class="label">Cover</p>
+      </div>
+      <div class="wrapper contain">
+        <p class="label">Contain</p>
+      </div>
+    </div>
+  </body>
+</html>

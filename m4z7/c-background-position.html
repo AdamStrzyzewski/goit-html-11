@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+        line-height: 1.5;
+        color: #212121;
+      }
+
+      .wrapper {
+        width: 320px;
+        height: 320px;
+        margin: auto;
+        border: 2px solid black;
+        background-image: url("https://image.ibb.co/n0M0cQ/red90x90.jpg");
+        background-repeat: no-repeat;
+
+        background-position: 50% 50%;
+        /* both for x and y axis */
+        background-position: 50%;
+        background-position: 50% 20%;
+
+        /* outside of the box */
+        background-position: 100px 500px;
+
+        background-position: 100px 10%;
+
+        /* both for x and y axis */
+        background-position: center;
+        background-position: right center;
+        background-position: left bottom;
+        background-position: center top;
+
+        background-position: left;
+        /* x - left, center, right */
+        /* y - top center bottom */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">Jakaś treść</div>
+  </body>
+</html>

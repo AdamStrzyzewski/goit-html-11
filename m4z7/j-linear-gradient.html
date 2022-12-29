@@ -1,0 +1,159 @@
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        color: #212121;
+        letter-spacing: -0.05em;
+        line-height: 1.5;
+      }
+
+      .tile-set {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        gap: 10px;
+      }
+      .tile {
+        height: 200px;
+        flex-basis: calc(50% - 10px);
+        color: white;
+        padding: 10px;
+        background-color: #9e9e9e;
+        font-size: 32px;
+      }
+
+      .tile:nth-child(1) {
+        background-image: linear-gradient(to bottom, red, green);
+      }
+      .tile:nth-child(2) {
+        background-image: linear-gradient(to top, red, green, blue);
+      }
+      .tile:nth-child(3) {
+        background-image: linear-gradient(to right, red, blue);
+      }
+
+      .tile:nth-child(4) {
+        background-image: linear-gradient(to top left, red, blue);
+      }
+      .tile:nth-child(5) {
+        background-image: linear-gradient(to bottom right, red, blue);
+      }
+
+      .tile:nth-child(6) {
+        background-image: linear-gradient(to bottom, red 30%, blue 50%, black);
+      }
+      .tile:nth-child(7) {
+        background-image: linear-gradient(
+          to bottom,
+          red 30%,
+          blue 30%,
+          blue 50%,
+          green 50%,
+          black 60%
+        );
+      }
+      .tile:nth-child(8) {
+        background-image: linear-gradient(to bottom, white 50%, red 50%);
+      }
+
+      .tile:nth-child(9) {
+        background-image: repeating-linear-gradient(
+          to bottom,
+          red,
+          red 20px,
+          blue 30px,
+          blue 40px
+        );
+      }
+      .tile:nth-child(10) {
+        background-image: repeating-linear-gradient(
+          to bottom,
+          red,
+          red 20px,
+          blue 20px,
+          blue 40px
+        );
+      }
+      .tile:nth-child(11) {
+        background-image: repeating-linear-gradient(
+          to bottom right,
+          red,
+          red 20px,
+          blue 20px,
+          blue 40px
+        );
+      }
+      .tile:nth-child(12) {
+        background-image: repeating-linear-gradient(
+          to top left,
+          red,
+          red 20px,
+          blue 20px,
+          blue 40px
+        );
+      }
+      .tile:nth-child(13) {
+        background-image: repeating-linear-gradient(
+          to top left,
+          red,
+          red 20px,
+          blue 20px,
+          blue 40px,
+          green 40px,
+          green 60px
+        );
+      }
+
+      .tile:nth-child(14) {
+        color: black;
+        background-color: white;
+        background-image: repeating-linear-gradient(
+            to left,
+            black 1px,
+            transparent 2px,
+            transparent 28px
+          ),
+          repeating-linear-gradient(
+            to top,
+            black 1px,
+            transparent 2px,
+            transparent 28px
+          ),
+          repeating-linear-gradient(
+            to top left,
+            black 1px,
+            transparent 2px,
+            transparent 28px
+          ),
+          repeating-linear-gradient(
+            to top right,
+            black 1px,
+            transparent 2px,
+            transparent 28px
+          );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tile-set">
+      <div class="tile">to bottom</div>
+      <div class="tile">to top</div>
+      <div class="tile">to right</div>
+      <div class="tile">to top left</div>
+      <div class="tile">to bottom right</div>
+      <div class="tile">color stop</div>
+      <div class="tile">color stop</div>
+      <div class="tile">color stop</div>
+      <div class="tile">to bottom</div>
+      <div class="tile">to top</div>
+      <div class="tile">to bottom right</div>
+      <div class="tile">to top left</div>
+      <div class="tile">repeating to top left</div>
+      <div class="tile">grid</div>
+    </div>
+  </body>
+</html>

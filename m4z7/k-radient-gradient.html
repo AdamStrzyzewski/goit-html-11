@@ -1,0 +1,120 @@
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        color: #212121;
+        letter-spacing: -0.05em;
+        line-height: 1.5;
+      }
+
+      .tile-set {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        gap: 10px;
+      }
+      .tile {
+        height: 200px;
+        flex-basis: calc(50% - 10px);
+        color: white;
+        padding: 10px;
+        background-color: #9e9e9e;
+        font-size: 32px;
+      }
+
+      .tile:nth-child(1) {
+        background-image: radial-gradient(at center, red, blue);
+      }
+      .tile:nth-child(2) {
+        background-image: radial-gradient(circle at center, red, blue);
+      }
+      .tile:nth-child(3) {
+        background-image: radial-gradient(
+          circle at top right,
+          red,
+          blue,
+          green
+        );
+      }
+      .tile:nth-child(4) {
+        background-image: radial-gradient(
+          circle at bottom left,
+          red,
+          blue,
+          green
+        );
+      }
+      .tile:nth-child(5) {
+        background-image: radial-gradient(ellipse at center, red, blue, green);
+      }
+      .tile:nth-child(6) {
+        background-image: radial-gradient(
+          circle at center,
+          red 10%,
+          blue 30%,
+          green 70%
+        );
+      }
+      .tile:nth-child(7) {
+        background-image: radial-gradient(
+          circle at top right,
+          red 10%,
+          blue 10%,
+          blue 20%,
+          green 20%
+        );
+      }
+      .tile:nth-child(8) {
+        background-image: radial-gradient(
+          circle at bottom right,
+          #f44336 15%,
+          #09792b 15%,
+          #09792b 40%,
+          #00b9ff 40%,
+          #00b9ff 65%,
+          #ffb800 65%
+        );
+      }
+      .tile:nth-child(9) {
+        background-image: repeating-radial-gradient(
+          ellipse at center,
+          blue,
+          blue 20px,
+          yellow 20px,
+          green 100px
+        );
+      }
+
+      .tile:nth-child(10) {
+        background-image: repeating-radial-gradient(
+          circle at top right,
+          blue,
+          blue 20px,
+          red 20px,
+          red 40px,
+          green 40px,
+          green 100px
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tile-set">
+      <div class="tile">elipse at center</div>
+      <div class="tile">circle at center</div>
+      <div class="tile">circle at top right</div>
+      <div class="tile">circle at bottom left</div>
+      <div class="tile">ellipse at center</div>
+      <div class="tile">circle at center</div>
+      <div class="tile">circle at top right</div>
+      <div class="tile">circle at bottom right</div>
+
+      <div class="tile">ellipse at center</div>
+      <div class="tile">circle at top right</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        border: 2px solid red;
+        height: 100px;
+        width: 200px;
+        /* width: 200px; */
+        overflow: scroll;
+        /* overflow-x: scroll;
+        overflow-y: scroll; */
+        position: relative;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo placeat qui
+      alias quos nihil officia a expedita fugiat, modi molestias recusandae
+      voluptates sed similique illum enim nam cupiditate aspernatur obcaecati,
+      sunt at dolores? Quisquam nesciunt ad, blanditiis odio nemo beatae
+      temporibus similique reprehenderit esse cumque atque, est, quos soluta
+      incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+      placeat qui alias quos nihil officia a expedita fugiat, modi molestias
+      recusandae voluptates sed similique illum enim nam cupiditate aspernatur
+      obcaecati, sunt at dolores? Quisquam nesciunt ad, blanditiis odio nemo
+      beatae temporibus similique reprehenderit esse cumque atque, est, quos
+      soluta incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Quo placeat qui alias quos nihil officia a expedita fugiat, modi molestias
+      recusandae voluptates sed similique illum enim nam cupiditate aspernatur
+      obcaecati, sunt at dolores? Quisquam nesciunt ad, blanditiis odio nemo
+      beatae temporibus similique reprehenderit esse cumque atque, est, quos
+      soluta incidunt!
+    </div>
+    <button>
+      The text overflowing outside the div.box will not affect the position of
+      this button, because the overflow is only visual.
+    </button>
+  </body>
+</html>

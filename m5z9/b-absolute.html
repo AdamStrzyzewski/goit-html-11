@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        position: static;
+      }
+      .container {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+        border: 2px solid black;
+        height: 400px;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+          0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+          0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+      }
+
+      .box:nth-child(1) {
+        background-color: teal;
+      }
+      .box:nth-child(2) {
+        background-color: orange;
+      }
+      .box:nth-child(3) {
+        background-color: palevioletred;
+      }
+
+      .absolute {
+        position: absolute;
+        /* top: 50px; */
+        top: 0;
+        left: 0;
+        /* bottom: 50px; */
+        /* from parent */
+        /* top: 50%; */
+        /* left: 100px; */
+        /* right: 100px;
+        bottom: 100px; */
+        /* top
+        left
+        right
+        bottom */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box absolute"></div>
+      <div class="box"></div>
+    </div>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box absolute"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

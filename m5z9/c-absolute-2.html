@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        position: static;
+      }
+      .container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+        border: 2px solid black;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+      .thumb {
+        position: relative;
+        margin: 10px;
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+          0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+          0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+      }
+
+      .label {
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        padding: 8px 16px;
+        font-size: 24px;
+        background-color: #2196f3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="thumb">
+        <img
+          src="https://images.pexels.com/photos/58997/pexels-photo-58997.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=320"
+          alt="happy-corgi-running-on-a-ledge"
+        />
+        <p class="label">Dog</p>
+      </div>
+      <div class="thumb">
+        <img
+          src="https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?auto=compress&cs=tinysrgb&dpr=2&&w=320"
+          alt="adorable-animal-blur-cat"
+        />
+        <p class="label">Cat</p>
+      </div>
+      <div class="thumb">
+        <img
+          src="https://images.pexels.com/photos/1300361/pexels-photo-1300361.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=320"
+          alt="black-hog-prone-lying-on-soil-under-shade-of-tree"
+        />
+        <p class="label">Dog</p>
+      </div>
+    </div>
+  </body>
+</html>

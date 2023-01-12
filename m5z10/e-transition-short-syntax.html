@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: black;
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+          0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+          0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        /* A */
+        background-color: red;
+        transform: rotate(0);
+        margin: 10px auto;
+        /* transition-delay: 2s, 5s, 10s;
+        transition-duration: 1s, 2s, 3s;
+        /* transition-property: all; */
+        /* transition-property: background-color, transform, border-width; */
+        transition: background-color 1s linear 2s, transform 2s ease-in 5s,
+          border-width 1s;
+      }
+
+      .box:hover {
+        /* B */
+        background-color: teal;
+        border-width: 50px;
+        transform: rotate(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

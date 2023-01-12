@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        /* view height */
+        justify-content: center;
+        background-color: white;
+      }
+
+      .box {
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        margin: 100px auto;
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+          0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+          0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        background-color: black;
+
+        /* animation-name: bgColor, spin;
+        animation-duration: 1s, 2s; */
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation: spin 3s linear 0ms infinite alternate both,
+          bgColor 3s linear 0ms infinite alternate both;
+      }
+
+      .box:hover {
+        /* animation-play-state: running; */
+        animation-play-state: paused;
+      }
+
+      @keyframes bgColor {
+        0% {
+          background-color: black;
+        }
+        100% {
+          background-color: red;
+        }
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

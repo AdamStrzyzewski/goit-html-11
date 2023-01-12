@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        border-color: black;
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+          0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+          0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        background-color: red;
+        margin: 50px auto;
+      }
+
+      .box:hover {
+        border-width: 50px;
+        animation-name: changeBgColor;
+        animation-duration: 5000ms;
+      }
+
+      /* camelCase */
+      /* kebab-case */
+      @keyframes changeBgColor {
+        /* from */
+        0% {
+          background-color: teal;
+        }
+        33% {
+          background-color: pink;
+        }
+        50% {
+          background-color: orange;
+        }
+        /* to */
+        100% {
+          background-color: deepskyblue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

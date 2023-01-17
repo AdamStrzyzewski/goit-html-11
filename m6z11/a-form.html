@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <style></style>
+  </head>
+  <body>
+    <!-- <form method="POST" name="signupForm"> -->
+    <form method="GET" name="signupForm" autocomplete="off" novalidate>
+      <label>
+        Email
+        <input type="email" name="userEmail" />
+      </label>
+
+      <label>
+        Password
+        <input type="password" name="userPassword" />
+      </label>
+
+      <button type="submit">Wyślij</button>
+    </form>
+
+    <form method="GET" name="signupForm">
+      <label for="email-input">Email</label>
+      <input id="email-input" type="email" name="userEmail" />
+
+      <label for="password-input">Password</label>
+      <input id="password-input" type="password" name="userPassword" />
+
+      <button type="submit">Wyślij</button>
+    </form>
+  </body>
+</html>

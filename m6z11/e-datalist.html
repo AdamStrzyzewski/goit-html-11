@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <style>
+      form {
+        border: 2px solid black;
+        margin-bottom: 20px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input list="browsers" name="fav" id="fav" />
+      <datalist id="browsers">
+        <option>Internet Explorer</option>
+        <!-- <option>Brave</option> -->
+        <option>Opera</option>
+        <!-- <option>Chrome</option> -->
+        <option>Safari</option>
+      </datalist>
+      <button>wyślij</button>
+    </form>
+
+    <form>
+      <label for="state">Choose your state</label>
+      <input name="state" id="state" list="states" />
+      <datalist id="states">
+        <option value="AL">Alabama</option>
+        <option value="AK">Alaska</option>
+        <option value="AZ">Arizona</option>
+        <option value="AR">Arkansas</option>
+      </datalist>
+      <button>wyślij</button>
+    </form>
+  </body>
+</html>

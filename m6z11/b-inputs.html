@@ -1,0 +1,166 @@
+<html>
+  <head>
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <style>
+      form {
+        border: 2px solid black;
+        margin-bottom: 20px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input type="text" name="username" placeholder="Username" />
+    </form>
+
+    <form>
+      <input type="text" name="username" value="Username" />
+    </form>
+
+    <form>
+      <input type="password" name="password" minlength="3" maxlength="5" />
+      <button>Submit</button>
+    </form>
+
+    <form class="column">
+      <h2>Choose a single color</h2>
+      <div>
+        <input id="red-input-id" type="radio" name="color" value="red" />
+        <label for="red-input-id">Czerwony</label>
+      </div>
+      <div>
+        <input
+          id="green-input-id"
+          type="radio"
+          name="color"
+          value="green"
+          checked
+        />
+        <label for="green-input-id">Zielony</label>
+      </div>
+      <!-- <input name="randomTextInput" /> -->
+      <div>
+        <input id="blue-input-id" type="radio" name="color" value="blue" />
+        <label for="blue-input-id">Niebieski</label>
+      </div>
+
+      <!-- <div>
+        <input id="red-input-id-2" type="radio" name="color-2" value="red" />
+        <label for="red-input-id-2">Czerwony</label>
+      </div>
+      <div>
+        <input
+          id="green-input-id-2"
+          type="radio"
+          name="color-2"
+          value="green"
+        />
+        <label for="green-input-id-2">Zielony</label>
+      </div>
+      <div>
+        <input id="blue-input-id-2" type="radio" name="color-2" value="blue" />
+        <label for="blue-input-id-2">Niebieski</label>
+      </div> -->
+      <button>Wyślij kolor</button>
+    </form>
+
+    <form name="hobby">
+      <h2>Select your hobbies</h2>
+      <ul>
+        <li>
+          <input
+            id="hobby-music"
+            type="checkbox"
+            name="hobbyCheckbox"
+            value="music"
+          />
+          <label for="hobby-music">Music</label>
+        </li>
+        <li>
+          <input
+            id="hobby-sports"
+            type="checkbox"
+            name="hobbyCheckbox"
+            value="sports"
+          />
+          <label for="hobby-sports">sports</label>
+        </li>
+        <li>
+          <input
+            id="hobby-reading"
+            type="checkbox"
+            name="hobbyCheckbox"
+            value="reading"
+          />
+          <label for="hobby-reading">reading</label>
+        </li>
+      </ul>
+      <button type="submit">Send my hobbies</button>
+      <!-- http://127.0.0.1:5500/m6z11/b-inputs.html?hobbyCheckbox=sports&hobbyCheckbox=reading -->
+    </form>
+
+    <form>
+      <!-- /* 5.4E6 => 5.4 * 10^6 */ -->
+      <!-- notacja naukowa / postać wykładnicza -->
+      <!-- https://pl.wikipedia.org/wiki/Notacja_naukowa -->
+      <input type="number" min="5" max="10" />
+    </form>
+
+    <form><input type="number" step="100" /></form>
+
+    <form>
+      <input type="tel" />
+    </form>
+
+    <form>
+      <!-- ISO8601 -->
+      <input name="date1" type="date" min="2022-01-01" max="2022-06-30" />
+      <input name="date2" type="time" />
+      <input name="date3" type="datetime-local" />
+      <button>Wyślij</button>
+      <!-- http://127.0.0.1:5500/m6z11/b-inputs.html?
+      date1=2022-06-16
+      date2=23%3A58
+      date3=2023-01-18T23%3A00 -->
+    </form>
+
+    <form>
+      <input type="file" />
+    </form>
+
+    <form>
+      <input type="color" />
+    </form>
+
+    <form>
+      <label>
+        <input
+          id="tel-phone-range"
+          type="range"
+          name="phoneNumber"
+          min="111111111"
+          max="999999999"
+          value="505398345"
+        />
+        <p>Selected value <span id="js-selected-value">505-398-345</span></p>
+      </label>
+    </form>
+
+    <script>
+      const rangeInput = document.querySelector("#tel-phone-range");
+      const output = document.querySelector("#js-selected-value");
+      rangeInput.addEventListener("input", (e) => {
+        let formattedPhoneNumber = e.target.value.split("");
+        formattedPhoneNumber.splice(3, 0, "-");
+        formattedPhoneNumber.splice(7, 0, "-");
+        formattedPhoneNumber = formattedPhoneNumber.join("");
+        output.textContent = formattedPhoneNumber;
+      });
+    </script>
+  </body>
+</html>

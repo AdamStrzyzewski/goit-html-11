@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <style>
+      form {
+        border: 2px solid black;
+        margin-bottom: 20px;
+        padding: 20px;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      input {
+        appearance: none;
+      }
+
+      label {
+        position: relative;
+        cursor: pointer;
+      }
+      li {
+        margin-bottom: 20px;
+      }
+
+      label::before {
+        display: block;
+        position: absolute;
+        left: -30px;
+        top: 0px;
+        content: "";
+        width: 20px;
+        height: 20px;
+        border: 2px solid black;
+        transition: all 0.5s;
+      }
+
+      input:hover + label::before,
+      input:focus + label::before {
+        background-color: grey;
+      }
+
+      input:checked + label::before {
+        left: 110%;
+        width: 40px;
+        border-radius: 100%;
+      }
+
+      input.red:checked + label::before {
+        background-color: red;
+      }
+
+      input.green:checked + label::before {
+        background-color: green;
+      }
+      input.blue:checked + label::before {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <form name="hobby">
+      <h2>Select your hobbies</h2>
+      <ul>
+        <li>
+          <input
+            id="hobby-music"
+            type="checkbox"
+            name="hobbyCheckbox"
+            value="music"
+            class="red"
+            checked
+          />
+          <label for="hobby-music">Music</label>
+        </li>
+        <li>
+          <input
+            id="hobby-sports"
+            type="checkbox"
+            name="hobbyCheckbox"
+            value="sports"
+            class="green"
+          />
+          <label for="hobby-sports">sports</label>
+        </li>
+        <li>
+          <input
+            id="hobby-reading"
+            type="checkbox"
+            name="hobbyCheckbox"
+            value="reading"
+            class="blue"
+          />
+          <label for="hobby-reading">reading</label>
+        </li>
+      </ul>
+      <button type="submit">Send my hobbies</button>
+      <!-- http://127.0.0.1:5500/m6z11/b-inputs.html?hobbyCheckbox=sports&hobbyCheckbox=reading -->
+    </form>
+  </body>
+</html>

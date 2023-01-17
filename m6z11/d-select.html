@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <style>
+      form {
+        border: 2px solid black;
+        margin-bottom: 20px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="size">Size</label>
+      <select id="size" name="size">
+        <option value="xs">Extra small</option>
+        <option value="s">Small</option>
+        <option value="m" selected>Medium</option>
+        <option value="l">Large</option>
+        <option value="xl">Extra Large</option>
+      </select>
+    </form>
+    <form>
+      <label for="size">Size</label>
+      <select id="size" name="size" multiple>
+        <option value="xs">Extra small</option>
+        <option value="s">Small</option>
+        <option value="m" selected>Medium</option>
+        <option value="l">Large</option>
+        <option value="xl">Extra Large</option>
+      </select>
+    </form>
+
+    <form>
+      <label for="month">Month</label>
+      <select name="month" id="month">
+        <optgroup label="Summer">
+          <option value="6">June</option>
+          <option value="7">July</option>
+          <option value="8">August</option>
+        </optgroup>
+        <optgroup label="Autumn">
+          <option value="9">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+        </optgroup>
+      </select>
+    </form>
+    <form>
+      <label for="month">Month</label>
+      <select name="month" id="month" multiple>
+        <optgroup label="Summer">
+          <option value="6">June</option>
+          <option value="7">July</option>
+          <option value="8">August</option>
+        </optgroup>
+        <optgroup label="Autumn">
+          <option value="9">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+        </optgroup>
+      </select>
+    </form>
+  </body>
+</html>

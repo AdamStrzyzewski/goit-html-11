@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <style>
+      form {
+        border: 2px solid black;
+        margin-bottom: 20px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Enter your contact details</legend>
+        <label>
+          Name
+          <input type="text" name="username" />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your favourite programming language</legend>
+        <label>
+          <input type="checkbox" name="language" value="python" />
+          Python
+        </label>
+        <label>
+          <input type="checkbox" name="language" value="js" />
+          JavaScript
+        </label>
+        <label>
+          <input type="checkbox" name="language" value="ruby" />
+          Ruby
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>I want to receive</legend>
+        <label>
+          <input type="checkbox" name="newsletter" value="weekly" />
+          The weekly newsletter
+        </label>
+        <label>
+          <input type="checkbox" name="newsletter" value="company_offers" />
+          Offers from the company
+        </label>
+        <label>
+          <input type="checkbox" name="newsletter" value="associated_offers" />
+          Offers from associated companies
+        </label>
+      </fieldset>
+
+      <button type="submit">Subscribe</button>
+      <input type="reset" />
+    </form>
+
+    <!-- http://127.0.0.1:5500/m6z11/f-grouping.html? username=adam&
+    email=test%40test.pl& language=js& newsletter=company_offers -->
+  </body>
+</html>

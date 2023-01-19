@@ -1,0 +1,66 @@
+<!-- https://regexr.com/ -->
+<html>
+  <head>
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <style>
+      form {
+        padding: 20px;
+        border: 1px solid black;
+        margin: 20px;
+      }
+      input {
+        width: 300px;
+        padding: 10px;
+        display: block;
+        color: white;
+        margin-bottom: 10px;
+      }
+
+      .form-input:valid {
+        background-color: green;
+        color: white;
+      }
+
+      .form-input:invalid {
+        background-color: red;
+        color: white;
+      }
+
+      .form-input::placeholder {
+        color: white;
+        font-size: 24px;
+        font-weight: 600;
+        /* background-color: pink; */
+      }
+
+      .form-input:placeholder-shown {
+        border-width: 10px;
+      }
+      .form-input:not(:placeholder-shown) {
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input required class="form-input" />
+      <input
+        minlength="3"
+        class="form-input"
+        placeholder="Min 3 not required"
+      />
+      <input
+        required
+        minlength="2"
+        class="form-input"
+        placeholder="Min 2 required"
+      />
+
+      <button>wyślij</button>
+    </form>
+  </body>
+</html>

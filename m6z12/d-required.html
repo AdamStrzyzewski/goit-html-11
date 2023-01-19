@@ -1,0 +1,41 @@
+<!-- https://regexr.com/ -->
+<html>
+  <head>
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <style>
+      form {
+        padding: 20px;
+        border: 1px solid black;
+        margin: 20px;
+      }
+      input {
+        width: 100px;
+        padding: 10px;
+        display: block;
+        color: white;
+        margin-bottom: 10px;
+      }
+
+      .form-input:required {
+        background-color: orange;
+        border: 3px solid blue;
+      }
+      .form-input:not(:required) {
+        background-color: red;
+        border: 3px solid orange;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input required class="form-input" />
+      <input class="form-input" />
+
+      <button>wyślij</button>
+    </form>
+  </body>
+</html>

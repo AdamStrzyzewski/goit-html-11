@@ -1,0 +1,8 @@
+$-private-var: none;
+$publicVar: red;
+
+@mixin reset {
+  outline: $-private-var;
+  margin: 0;
+  padding: 0;
+}

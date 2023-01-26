@@ -1,0 +1,29 @@
+// * {
+//   box-sizing: border-box;
+// }
+
+// @import "./lib/a-variables";
+// @import "./lib/b-nested";
+// @import "./lib/c-math";
+// @import "./lib/d-extend";
+// @import "./lib/e-placeholder";
+// @import "./lib/f-mixin";
+// @import "./lib/g-forEach-zoo";
+// @import "./lib/h-colors";
+
+@use "./lib/button";
+@use "./lib/paragraph";
+// how to skip namescapes
+// @use "./lib/paragraph" as *;
+// @use "./lib/button" as btn;
+
+button {
+  // private variable error
+  // outline: reset.$-private-var;
+  color: button.$publicVar;
+  @include button.reset;
+}
+
+p {
+  @include paragraph.reset;
+}

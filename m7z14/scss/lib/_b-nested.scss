@@ -1,0 +1,29 @@
+// zagnieżdżanie
+.article {
+  width: 100%;
+
+  .title {
+    color: red;
+  }
+}
+
+// block
+.section {
+  width: 100%;
+  // state for section
+  &:hover {
+    background-color: black;
+  }
+  // element
+  &__title {
+    color: red;
+    // modyfikator
+    &--blue {
+      color: blue;
+    }
+    // state hover
+    &:hover {
+      color: green;
+    }
+  }
+}

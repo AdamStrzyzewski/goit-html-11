@@ -1,0 +1,17 @@
+.box {
+  width: 960px + 30px;
+  width: 960px + 30;
+  width: 100% + 20%;
+  // width: 960px - 20%; błąd niekompatybilne jednostki
+
+  width: 960px - 30px;
+
+  width: 50px * 2;
+  width: 100% * 2;
+
+  width: 5 * (5px + 15px);
+
+  $value: 10px;
+  width: $value / 2;
+  width: (100px / 5);
+}

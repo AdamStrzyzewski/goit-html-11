@@ -1,0 +1,34 @@
+$animals: dog, cat, bird, turtle, elephant;
+
+.icon {
+  width: 50px;
+  height: 50px;
+
+  //   $animal = dog
+  //   $animal = cat
+  //   $animal = bird
+  //   $animal = turtle
+  //   $animal = elephant
+  @each $animal in $animals {
+    &.#{$animal}-icon {
+      background-image: url("../images/#{$animal}.png");
+    }
+  }
+  //   <span class="icon dog-icon"></span>
+  //   &.dog-icon {
+  //     background-image: url("../images/dog.png");
+  //   }
+  //   &.cat-icon {
+  //     background-image: url("../images/cat.png");
+  //   }
+}
+
+@each $animal in $animals {
+  $i: index($animals, $animal);
+  .icon:nth-child(#{$i}) {
+    background-image: url("../images/#{$animal}.png");
+  }
+}
+
+// @for
+// @while

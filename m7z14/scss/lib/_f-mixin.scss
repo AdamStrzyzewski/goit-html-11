@@ -1,0 +1,27 @@
+@mixin alertBorderMixin($color, $width: 1px) {
+  border-top: $width solid $color;
+  border-bottom: ($width * 2) solid $color;
+  border-left: ($width * 4) solid $color;
+  border-right: ($width * 8) solid $color;
+}
+
+.alert-success {
+  //   border: 2px solid green;
+  @include alertBorderMixin(green, 2px);
+}
+
+.alert-error {
+  //   border: 2px solid red;
+  @include alertBorderMixin(red, 4px);
+}
+
+.alert-warning {
+  //   border: 2px solid red;
+  @include alertBorderMixin(red);
+}
+
+$defaultBlue: lightblue;
+
+.alert-primary {
+  @include alertBorderMixin($defaultBlue, 3px);
+}

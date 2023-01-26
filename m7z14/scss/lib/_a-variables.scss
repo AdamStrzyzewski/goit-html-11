@@ -1,0 +1,16 @@
+// 1 variables
+// camelCase
+$primaryColor: red;
+
+p {
+  color: $primaryColor;
+}
+
+body {
+  $primaryColor2: blue;
+  background-color: $primaryColor2;
+}
+
+// a {
+//   background-color: $primaryColor2;
+// }

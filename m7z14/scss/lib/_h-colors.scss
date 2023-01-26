@@ -1,0 +1,22 @@
+// $primaryColor: brown;
+// $secondaryColor: orange;
+
+$christmasColors: (
+  "primary": brown,
+  "secondary": orange,
+  "foreground": red,
+);
+
+$regularColors: (
+  "primary": blue,
+  "secondary": green,
+  "foreground": white,
+);
+
+@function getColorFromCurrentTheme($key) {
+  @return map-get($regularColors, $key);
+}
+
+p {
+  color: getColorFromCurrentTheme("secondary");
+}

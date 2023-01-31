@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: sans-serif;
+      }
+
+      .container {
+        min-width: 320px;
+        margin: 0 auto;
+        background-color: #ffc107;
+        text-align: center;
+        line-height: 180px;
+        font-size: 32px;
+        white-space: nowrap;
+      }
+
+      .container.responsive {
+        max-width: 1140px;
+        margin-bottom: 40px;
+      }
+
+      .container.adaptive {
+        max-width: 320px;
+      }
+
+      @media (min-width: 600px) {
+        .container {
+          background-color: #00bcd4;
+        }
+        .container.adaptive {
+          max-width: 600px;
+        }
+      }
+
+      @media (min-width: 900px) {
+        .container {
+          background-color: #8bc34a;
+        }
+        .container.adaptive {
+          max-width: 900px;
+        }
+      }
+
+      @media (min-width: 1140px) {
+        .container {
+          background-color: #ff5252;
+        }
+        .container.adaptive {
+          max-width: 1140px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container responsive">
+      <p class="label">I'm a responsive container</p>
+    </div>
+    <div class="container adaptive">
+      <p class="label">I'm a adaptive container</p>
+    </div>
+  </body>
+</html>

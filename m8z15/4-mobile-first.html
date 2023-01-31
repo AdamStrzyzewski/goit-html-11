@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: sans-serif;
+      }
+
+      /* mobile */
+      .container {
+        max-width: 1170px;
+        min-width: 320px;
+        margin: 0 auto;
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .element {
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 24px;
+        color: white;
+      }
+
+      @media (max-width: 768px) {
+        .element:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+        }
+        .element {
+          flex-basis: calc((100% - 10px) / 2);
+          font-size: 32px;
+        }
+      }
+
+      /* just tablet resolution rule */
+      @media (min-width: 768px) and (max-width: calc(1024px - 1px)) {
+        .element {
+          border: 10px dashed black;
+        }
+      }
+
+      /* desktop */
+      @media (min-width: 1024px) {
+        .element {
+          flex-basis: calc((100% - 20px) / 3);
+        }
+      }
+
+      .element:nth-child(1) {
+        background-color: #f44336;
+      }
+      .element:nth-child(2) {
+        background-color: #3f51b5;
+      }
+      .element:nth-child(3) {
+        background-color: #4caf50;
+      }
+      .element:nth-child(4) {
+        background-color: #00bcd4;
+      }
+      .element:nth-child(5) {
+        background-color: #e91e63;
+      }
+      .element:nth-child(6) {
+        background-color: #009688;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="element">1</div>
+      <div class="element">2</div>
+      <div class="element">3</div>
+      <div class="element">4</div>
+      <div class="element">5</div>
+      <div class="element">6</div>
+    </div>
+  </body>
+</html>

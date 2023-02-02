@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      img {
+        /* width: 300px; */
+        /* 100vw < 600px viewport */
+        width: 100%;
+        margin: auto;
+        display: block;
+      }
+
+      @media (min-width: 600px) {
+        img {
+          width: 300px;
+        }
+      }
+
+      @media (min-width: 900px) {
+        img {
+          width: 600px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <img
+      src="https://picsum.photos/id/237/300"
+      srcset="
+        https://picsum.photos/id/237/300 1x,
+        https://picsum.photos/id/237/600 2x,
+        https://picsum.photos/id/237/900 3x
+      "
+    /> -->
+
+    <!-- <img
+      src="https://picsum.photos/id/237/300"
+      srcset="
+        https://picsum.photos/id/237/300   300w,
+        https://picsum.photos/id/237/600   600w,
+        https://picsum.photos/id/237/1200 1200w
+      "
+      sizes="300px"
+    /> -->
+
+    <img
+      src="https://picsum.photos/id/237/300"
+      srcset="
+        https://picsum.photos/id/237/300   300w,
+        https://picsum.photos/id/237/600   600w,
+        https://picsum.photos/id/237/1200 1200w
+      "
+      sizes="(min-width: 900px) 600px, (min-width: 600px) 300px, 100vw"
+    />
+    <!-- DPR: 1 -->
+    <!-- 0-300px viewport => obrazek 300 -->
+    <!-- 301-599px viewport => obrazek 600 -->
+    <!-- 600-899px viewport => obrazek 300 -->
+    <!-- 900-INFINITYpx viewport => obrazek 600 -->
+
+    <!-- DPR: 2 -->
+  </body>
+</html>

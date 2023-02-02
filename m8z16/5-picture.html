@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        max-width: 100%;
+        /* margin: auto; */
+        display: block;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .thumb {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="thumb">
+        <picture>
+          <!-- media -> (max-width: 600px) -> poniżej 600px viewport - korzystaj z tego source -->
+          <source
+            media="(max-width: 600px)"
+            srcset="
+              https://picsum.photos/id/237/400/600  400w,
+              https://picsum.photos/id/237/800/1200 800w
+            "
+            sizes="(min-width: 480px) 480px, 100vw"
+          />
+
+          <source
+            media="(min-width: 601px)"
+            srcset="
+              https://picsum.photos/id/237/800/400   800w,
+              https://picsum.photos/id/237/1600/800 1600w
+            "
+            sizes="(min-width: 800px) 800px, 100vw"
+          />
+          <!-- <source srcset="" media="" size="" type="" /> -->
+          <!-- fallback -->
+          <img src="https://picsum.photos/id/237/300/200" alt="Cute puppy" />
+        </picture>
+      </div>
+      <h1>Lorem ipsum dolor sit amet.</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe corporis
+        minus corrupti expedita nisi explicabo debitis facilis ut molestias
+        blanditiis, aliquid vitae molestiae alias omnis esse dolore iste harum
+        autem?
+      </p>
+    </div>
+  </body>
+</html>

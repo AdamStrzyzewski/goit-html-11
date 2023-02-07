@@ -1,0 +1,64 @@
+.header {
+  position: fixed;
+  background-color: rgba(25, 28, 38, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: var(--idx-header);
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    animation: slide-to-right 500ms ease-out 200ms both;
+    margin-right: 60px;
+    @include mq(desktop) {
+      margin-right: 132px;
+    }
+  }
+
+  &__nav {
+    margin-right: auto;
+  }
+
+  &__group,
+  &__nav {
+    display: none;
+    @include mq(tablet) {
+      display: flex;
+    }
+  }
+
+  &__menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: auto;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+    // @include mq(tablet) {
+    //   display: none;
+    // }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+      & .menu-toggle__icon {
+        fill: var(--accent-txt-cl);
+      }
+    }
+  }
+}

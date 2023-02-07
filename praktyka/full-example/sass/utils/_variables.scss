@@ -1,0 +1,34 @@
+:root {
+  /* Fonts */
+  --main-font: 'Open Sans', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  /* Text colors */
+  --main-txt-cl: #303030;
+  --accent-txt-cl: #ff6c00;
+  --light-txt-cl: #ffffff;
+  --dark-txt-cl: #555555;
+
+  --grey-cl: rgb(157, 164, 189);
+  --grey-cl-60: rgba(157, 164, 189, 0.6);
+
+  /* BG colors */
+  --dark-bg-cl: #191c26;
+  --accent-bg-cl: #ff6c00;
+
+  /* Others */
+  --btn-radius: 25px;
+  --indent: 30px;
+  --items: 4;
+
+  --idx-header: 100;
+  --idx-backdrop: 1000;
+
+  --trns-fast: 300ms ease-in-out;
+  --trns-slow: 500ms ease-in;
+}
+
+// BREAKPOINTS
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;

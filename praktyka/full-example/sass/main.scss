@@ -1,0 +1,23 @@
+// utils styles
+@import './utils/variables';
+@import './utils/v-hidden';
+@import './utils/animations';
+@import './utils/placeholders';
+@import './utils/mixins';
+
+// base styles
+@import './base/base';
+@import './base/reset';
+@import './base/typography';
+
+// components styles
+@import './components/about';
+@import './components/buttons';
+@import './components/container';
+@import './components/footer';
+@import './components/header';
+@import './components/hero';
+@import './components/logo';
+@import './components/media';
+@import './components/menu';
+@import './components/navigation';

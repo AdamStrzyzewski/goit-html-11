@@ -1,0 +1,25 @@
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  border: 2px solid black;
+
+  @include mq(phone) {
+    width: 448px;
+  }
+  @include mq(tablet) {
+    width: 720px;
+  }
+  @include mq(desktop) {
+    width: 1200px;
+  }
+  //   @media (min-width: 480px) {
+  //       width: 448px;
+  //   }
+  //   @media (min-width: 768px) {
+  //       width: 768px;
+  //   }
+
+  //   @media (min-width: 1200px) {
+  //       width: 1200px;
+  //   }
+}

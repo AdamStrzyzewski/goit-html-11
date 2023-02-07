@@ -1,0 +1,80 @@
+@import './decimals';
+
+/**
+  |============================
+  | Mixin for vertical
+  | indent of sections
+  |============================
+*/
+@mixin section($pt: 120px, $pb: $pt) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
+
+/**
+  |============================
+  | Mixin for text values
+  |============================
+*/
+@mixin fonts($fs, $lh, $fw: false, $ls: 0.02em) {
+  @if $fw {
+    font-weight: $fw;
+  }
+  font-size: $fs;
+  @if $lh and $fs {
+    $lhToMultiplier: calc($lh / $fs);
+    line-height: decimal-round($lhToMultiplier);
+  }
+  letter-spacing: $ls;
+}
+
+/**
+  |============================
+  | Build grid element system
+  | with flex layout
+  |============================
+*/
+@mixin card-set($items: 1, $indent-x: 30px, $indent-y: $indent-x) {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: $indent-y;
+  column-gap: $indent-x;
+
+  & > * {
+    flex-basis: calc((100% - $indent-x * ($items - 1)) / $items);
+  }
+}
+
+/**
+  |============================
+  | Mixin for media query
+  |============================
+*/
+$breakpoints: (
+  'phone': 480px,
+  'tablet': 768px,
+  'desktop': 1200px,
+);
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: calc($width - 0.02px);
+    }
+    @media screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+// usage media query mixin
+
+// |.site-header {
+// |   padding: 2rem;
+// |   font-size: 1.8rem;
+// |
+// |   @include mq('tablet-wide') {
+// |       padding-top: 4rem;
+// |       font-size: 2.4rem;
+// |   }
+// |}

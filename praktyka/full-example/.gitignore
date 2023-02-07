@@ -1,0 +1,6 @@
+# MacOS system folder
+
+.DS_Store
+
+# exclude svg files
+icons

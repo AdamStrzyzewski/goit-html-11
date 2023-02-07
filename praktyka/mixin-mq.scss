@@ -1,0 +1,29 @@
+// @Filip Bączkowski
+
+@use "sass:map";
+
+$breakpoints: (
+  tiny: 320px,
+  small: 480px,
+  medium: 768px,
+  large: 1200px,
+);
+
+@mixin breakpoint($key) {
+  breakpoint: map.get($breakpoints, $key);
+}
+
+@mixin mq($key, $add: null, $key2: null) {
+  $size: map.get($breakpoints, $key);
+  $size2: map.get($breakpoints, $key2);
+
+  @if ($add == null) {
+    @media (min-width: $size) {
+      @content;
+    }
+  } @else if ($add == and) {
+    @media (min-width: $size) and (max-width: calc($size2 - 1px)) {
+      @content;
+    }
+  }
+}

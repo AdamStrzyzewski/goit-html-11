@@ -1,0 +1,15 @@
+@keyframes slide-to-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

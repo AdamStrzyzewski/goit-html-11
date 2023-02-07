@@ -1,0 +1,49 @@
+@keyframes slide-to-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-to-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(0);
+    letter-spacing: 0.3em;
+  }
+
+  100% {
+    transform: translateX(0);
+    letter-spacing: 0.05em;
+  }
+}
+
+@keyframes slide-to-top {
+  0% {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

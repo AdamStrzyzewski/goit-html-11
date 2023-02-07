@@ -1,0 +1,19 @@
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+
+  // phone screen
+  @include mq(phone) {
+    width: 448px;
+  }
+
+  // tablet screen
+  @include mq(tablet) {
+    width: 720px;
+  }
+
+  // desktop screen
+  @include mq(desktop) {
+    width: 1200px;
+  }
+}

@@ -1,0 +1,31 @@
+.media-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  &::before {
+    content: '';
+
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: #303030;
+  }
+}
+
+.media-link {
+  display: block;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+
+  color: var(--main-txt-cl);
+
+  transition: color var(--trns-fast);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-txt-cl);
+  }
+}

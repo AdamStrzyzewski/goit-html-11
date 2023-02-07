@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The best barbershop in the world" />
+    <title>BarberShop</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <!-- Header section -->
+    <header class="header" data-header>
+      <div class="header__container container">
+        <a class="header__logo logo" href="" aria-label="BarberSop logo">
+          <svg class="logo__img" width="68" height="56">
+            <use href="./images/icons.svg#logo"></use>
+          </svg>
+        </a>
+        <nav class="nav header__nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link nav__link--current link" href="#about">About</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#price">Services and prices</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#team">Barbers</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__group">
+          <a class="header__contact link" href="tel:+380441111111">+38 044 111 11 11</a>
+          <button class="btn btn--theme-dark" type="button" data-modal-open>
+            <span class="btn-txt">Online-booking</span>
+          </button>
+        </div>
+
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-toggle-icon" width="24" height="24">
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <!-- Main section -->
+    <main>
+      <!-- Hero section -->
+      <section class="hero">
+        <div class="hero-container container">
+          <div class="hero-left-side">
+            <ul class="hero-media-list media-list list">
+              <li class="media-item">
+                <a class="media-link link" href="">Instagram</a>
+              </li>
+              <li class="media-item">
+                <a class="media-link link" href="">Youtube</a>
+              </li>
+            </ul>
+          </div>
+          <div class="hero-right-side">
+            <p class="hero-uppertitle uppertitle uppertitle-theme-dark">
+              A hair salon for men in Kyiv
+            </p>
+            <h1 class="main-title">BarberShop</h1>
+            <p class="hero-undertitle undertitle undertitle-theme-dark">
+              We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- About section -->
+      <section class="about" id="about">
+        <div class="about-container container">
+          <ul class="about-list list">
+            <li class="about-item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/about/img-1_lg@1x.jpg 1x, ./images/about/img-1_lg@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/about/img-1_md@1x.jpg 1x, ./images/about/img-1_md@2x.jpg 2x"
+                />
+                <img
+                  class="about-img"
+                  src="./images/about/img-1_md-@1x.jpg"
+                  alt="Beard shaving"
+                  loading="lazy"
+                />
+              </picture>
+            </li>
+            <li class="about-item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/about/img-2_lg@1x.jpg 1x, ./images/about/img-2_lg@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/about/img-2_md@1x.jpg 1x, ./images/about/img-2_md@2x.jpg 2x"
+                />
+                <img
+                  class="about-img"
+                  src="./images/about/img-2_md-@1x.jpg"
+                  alt="Haircut"
+                  loading="lazy"
+                />
+              </picture>
+            </li>
+          </ul>
+          <div class="about-right-side">
+            <p class="uppertitle">About</p>
+            <h2 class="title">Best Barbershop in your city</h2>
+            <p class="undertitle">
+              If you want to add more confidence to your image, you&nbsp;should definitely visit us.
+            </p>
+            <p class="about-desc">
+              We are a team that never stops at what has been achieved and are thirsty for changes.
+              And when you fall into the hands of our master, you will never be the same again. We
+              are a team that is always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
+            </p>
+            <button class="btn" type="button">online-booking</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer section -->
+    <footer class="footer">
+      <div class="footer-container container">
+        <ul class="footer-media-list media-list list">
+          <li class="media-item">
+            <a class="media-link footer-media-link link" href="">Instagram</a>
+          </li>
+          <li class="media-item">
+            <a class="media-link footer-media-link link" href="">Youtube</a>
+          </li>
+        </ul>
+        <p class="footer-copyright">&#169; Copyright 2020</p>
+      </div>
+    </footer>
+
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <nav>
+        <ul class="mobile-menu list">
+          <li><a href="" class="link">About</a></li>
+          <li><a href="" class="link">Products</a></li>
+          <li><a href="" class="link">Contacts</a></li>
+        </ul>
+      </nav>
+      <ul class="mobile-contacts list">
+        <li><a href="" class="link">+38 096 111 11 11</a></li>
+        <li><a href="" class="link">info@devstudio.com</a></li>
+      </ul>
+
+      <ul class="mobile-socials list">
+        <li class="mobile-socials-item"><a href="" class="link">Instagram</a></li>
+        <li class="mobile-socials-item"><a href="" class="link">Twitter</a></li>
+        <li class="mobile-socials-item"><a href="" class="link">Facebook</a></li>
+        <li class="mobile-socials-item"><a href="" class="link">LinkedIn</a></li>
+      </ul>
+    </div>
+
+    <!-- Scripts -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <script src="./js/header-scroll.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

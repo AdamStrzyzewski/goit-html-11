@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The best barbershop in the world" />
+    <title>BarberShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <a class="header__logo logo">
+          <svg class="logo__image" width="68" height="56">
+            <use href="./images/icons.svg#logo"></use>
+          </svg>
+        </a>
+        <nav class="nav header__nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link nav__link--active link" href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#price">Services and prices</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#team">Barbers</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__group">
+          <a class="header__phone-link link" href="tel:+380441111111"
+            >+38 044 111 1111</a
+          >
+          <button class="btn btn--theme-dark" type="button">
+            <span class="btn__text">online-booking</span>
+          </button>
+        </div>
+        <button class="header__menu-toggle menu-toggle js-open-menu">
+          <svg class="menu-toggle__icon" width="24" height="24">
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <nav>
+        <ul class="mobile-menu list">
+          <li><a class="mobile-menu__link link" href="#about">About</a></li>
+          <li>
+            <a class="mobile-menu__link link" href="#prices"
+              >Services and prices</a
+            >
+          </li>
+          <li><a class="mobile-menu__link link" href="#team">Barbers</a></li>
+          <li>
+            <a class="mobile-menu__link link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-contacts list">
+          <li>
+            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
